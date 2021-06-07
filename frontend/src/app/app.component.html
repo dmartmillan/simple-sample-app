@@ -1,0 +1,20 @@
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<div style="text-align:center">
+  <h1 class="title">A list of songs</h1>
+</div>
+
+<div>
+  <div class="col-md-12 col-lg-6" *ngFor="let song of songs">
+    <div class="member-card">
+      <div><a href="{{song.link}}"><i class="material-icons" style="font-size:48px; color: azure">play_circle_filled</i></a></div>
+      <div class="member-card-details">
+        <div class="member-name">{{song.name}}</div>
+        <div class="member-position">{{song.artist}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
