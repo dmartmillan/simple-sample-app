@@ -13,3 +13,7 @@ CORS(app, support_credentials=True)
 @cross_origin(supports_credentials=True)
 def get_songs() -> None:
     return jsonify(songs.get_songs())
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", debug=True, port=5000)
