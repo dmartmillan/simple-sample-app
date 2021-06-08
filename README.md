@@ -8,7 +8,8 @@ After clone the repo, it is recommended to use `Docker` to avoid any package and
 chmod u+x install_docker.sh
 ./install_docker.sh
 ```
-___
+***
+
 In case you didn't choose `Docker`, you will have to install these packages:
 - NPM >= 7.16.0
 - Nodejs >= 10.19.0
@@ -27,17 +28,20 @@ If we use `Docker`, we will just have to execute:
 ```bash
 docker-compose -f docker-compose.yml up --build
 ```
-___
+***
+
 If you don't use `Docker`,  in order to install the different pieces of the website, we will need to execute the next commands,  in a separate terminal `frontend` and `backend`.  
 
-### Frontend - client
+#### Frontend - client
+
 ```bash
 cd frontend/
 npm i
 ng serve # it will be listening on port 4200
 ```
 
-### Backend - server
+#### Backend - server
+
 ```bash
 cd backend/
 conda env create -f environment.yml
